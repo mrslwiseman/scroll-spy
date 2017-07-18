@@ -1,0 +1,40 @@
+body,
+html,
+.section {
+  height: 100%;
+  width:100%;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+
+nav {
+  position: fixed;
+  background: white;
+  width:100%;
+
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+}
+
+nav li span {
+  display: block;
+  height:2px;
+  background: red;
+  width:0%;
+}
+
+li.active > span {
+width:100%;
+transition: .5s;
+}
+
+.section:nth-child(2n + 1){
+  background: #eee;
+}
